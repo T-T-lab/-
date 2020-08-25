@@ -1,0 +1,614 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style>
+				.carousel-indicators li{
+					width: 12px;height: 12px;
+					border-radius: 50%;
+					background: #fff;
+					margin-left: 0.25rem;
+					margin-right: 0.25rem;
+				}
+				.carousel-indicators .active{
+					background: #0aa1ed;
+				}
+				.carousel-control-prev,
+				.carousel-control-next{
+					width: 4%;height: 20%;
+					background: #aaa;
+					border-radius: 0.25rem;
+					top: 40%;
+				}
+				/* .title-a{
+					height: 48px;line-height: 48px;
+					padding: 8px 4px 0;
+				} */
+				a{
+					color: #000;
+				}
+				a:hover{
+					text-decoration: none;
+					color: #000;
+				}
+				p{
+					margin: 0;
+					padding: 0;
+				}
+				.img_re{
+					position: relative;
+					width: 150px;
+				}
+				.img_ab{
+					position: absolute;
+				}
+				.bg_03{
+					width: 150px;
+					bottom: 25px;
+					opacity: 0.7;
+					background: #000000;
+				}
+			</style>
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="row no-gutters bg-light justify-content-between align-items-center">
+				<div class="col-sm-3">
+					<img src="QQ截图20200820152954.png" alt="" class="w-100">
+				</div>
+				<div class="col-sm-3 offset-6">
+					<img src="1.png" alt="" class="w-100">
+				</div>
+				</div>
+				<div class="row no-gutters">
+					<div class="col">
+					<ul class="nav justify-content-between">
+						<li class="nav-item"><a class="nav-link" href="#">首页</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">动画片</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">大电影</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">传统文化</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">儿歌</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">教育</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">排行榜</a></li>
+					</ul>
+					</div>
+				</div>
+				<div class="carousel" data-ride="carousel" id="demo">
+					<!-- 轮播的图片 -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img class="w-100" src="bd750.jpg" ="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="ddm7503.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="lea750.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="lxc750.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="sso750.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="ydy750.jpg" alt="">
+						</div>
+						<div class="carousel-item">
+							<img class="w-100" src="zjyxh750.png" alt="">
+						</div>
+					</div>
+					<!-- 轮播指示器 -->
+					<ul class="carousel-indicators">
+						<li data-target="#demo" data-slide-to="0" class="active"></li>
+						<li data-target="#demo" data-slide-to="1"></li>
+						<li data-target="#demo" data-slide-to="2"></li>
+						<li data-target="#demo" data-slide-to="3"></li>
+						<li data-target="#demo" data-slide-to="4"></li>
+						<li data-target="#demo" data-slide-to="5"></li>
+						<li data-target="#demo" data-slide-to="6"></li>
+					</ul>
+					<!--3左右箭头 -->
+					<a data-slide="next" href="#demo" class="carousel-control-next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<a data-slide="prev" href="#demo" class="carousel-control-prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+				</div>
+			</header>
+			<div class="d-flex justify-content-between mt-2">
+					<p>
+						<img src="QQ截图20200821200243.png" alt="" style="margin-bottom: 2px;">
+						热门动画片
+					</p>
+					<a href="" class="text-muted">更多</a>
+			</div>
+			
+				<div class="mt-4">
+					<div class="row no-gutters justify-content-between">
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="kbjz150.jpg" alt="">
+							<p class="text-warning img_ab bg_03 text-center">8.0分</p>
+							<p class="text-center"><a href="">买奇酷之咖宝家族</a></p>
+							</div>
+							</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="ddm150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">嘟当曼</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="yiyayiya3.jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">咿呀咿呀 第3季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="xla150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">小鹿问问·故事季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="gx150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">零捌学糖</a></p>
+							</div>
+							</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="caoyuan150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">草原豆思</a></p>
+							</div>
+							</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="bangbl150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">帮帮龙玩具总动员</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="frh150.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">松松小镇</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="yiyayiya9150.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">咿呀咿呀 第9季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="zhen150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">嘟嘟镇</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="150-kaxilong.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">卡西龙之寻龙记</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="150albtgsj2.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">阿狸布塔故事集</a></p>
+							</div>
+						</div>
+				</div>
+		</div>
+		<div class="d-flex justify-content-between mt-2">
+					<p>
+						<img src="QQ截图20200821200243.png" alt="" style="margin-bottom: 2px;">
+						热门连载动画
+					</p>
+					<a href="" class="text-muted">更多</a>
+			</div>
+				<div class="mt-4">
+					<div class="row no-gutters justify-content-between text-center">
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="150jwjxy2.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">更新至71集</p>
+							<p class="text-center"><a href="">叫我僵小鱼 第一季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="ddm150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">更新至12集</p>
+							<p class="text-center"><a href="">暮光幻影 第一季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="yaya200.jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">更新至3集</p>
+							<p class="text-center"><a href="">咿呀咿呀 第11季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="wuliao200.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">更新至12集</p>
+							<p class="text-center"><a href="">无料快活</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="mql200.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">更新至52集</p>
+							<p class="text-center"><a href="">木奇灵 第2季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="150mengxiangzongdonguan12.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">更新至26集</p>
+							<p class="text-center"><a href="">梦想总动员</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="shih150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">更新至12集</p>
+							<p class="text-center"><a href="">食神魂 第2季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="kon150.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">更新至90集</p>
+							<p class="text-center"><a href="">虹猫蓝兔 恐龙世界</a></p>
+						</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="tuoluo200.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">更新至30集</p>
+							<p class="text-center"><a href="">魔幻陀螺第2季</a></p>
+							</div>
+							</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="150xhrglrj02%20(1).jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">更新至12集</p>
+							<p class="text-center"><a href="">小黄人与格鲁日记</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="150xxy2.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.8分</p>
+							<p class="text-center"><a href="">星学院</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="hongmaolantuyongzheguilia.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.7分</p>
+							<p class="text-center"><a href="">虹猫蓝兔勇者归来</a></p>
+						</div>
+				</div>
+		</div>
+		<div class="d-flex justify-content-between mt-2">
+					<p>
+						<img src="QQ截图20200821200243.png" alt="" style="margin-bottom: 2px;">
+						大电影
+					</p>
+					<a href="" class="text-muted">更多</a>
+			</div>
+				<div class="mt-4">
+					<div class="row no-gutters justify-content-between text-center">
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="150xkekexiaoaigongyiju2.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">可可小爱公益剧</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="150tiaotiaoyu2.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">跳跳鱼世界</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re">
+							<img src="luob150.jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p class="text-center"><a href="">洛宝贝</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="kkxa4200.jpg" alt="">
+							<p class="text-warning  img_ab bg_03">8.0分</p>
+							<p><a href="">可可小爱第四季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="xywy200.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">襄阳萌物语</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="tailao150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">太姥娘娘与白茶仙子</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="./150hongmao2.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">虹猫蓝兔快乐识字</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="yt150.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">科普中国</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="wangzai200.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">旺仔全知道</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="sanzhisongshu2150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">三只松鼠之松鼠小镇</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="wu2150.jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">无敌小鹿 第2季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="150xphjd02%20(1).jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">小破孩</a></p>
+							</div>
+						</div>
+				</div>
+		</div>
+		<div class="d-flex justify-content-between mt-2">
+					<p>
+						<img src="QQ截图20200821200243.png" alt="" style="margin-bottom: 2px;">
+						儿歌童谣
+					</p>
+					<a href="" class="text-muted">更多</a>
+			</div>
+				<div class="mt-4">
+					<div class="row no-gutters justify-content-between text-center">
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="kkai150.jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">可可小爱科普系列</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="caoben150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">草本家族</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="lang200.jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">笨狼和他的小伙伴</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="jbcc150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">巨兵长城传 第1季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="150bbsfyb02.jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">笨笨鼠 东北方言版</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="caoyuan150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">草原豆思</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="bangbl150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">帮帮龙玩具总动员</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="frh150.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">松松小镇</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="yiyayiya9150.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">咿呀咿呀 第9季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="zhen150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">嘟嘟镇</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="kbjz150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">买奇酷之咖宝家族</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="kbjz150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">买奇酷之咖宝家族</a></p>
+							</div>
+						</div>
+				</div>
+		</div>
+		<div class="d-flex justify-content-between mt-2">
+					<p>
+						<img src="QQ截图20200821200243.png" alt="" style="margin-bottom: 2px;">
+						传统文化
+					</p>
+					<a href="" class="text-muted">更多</a>
+			</div>
+				<div class="mt-4">
+					<div class="row no-gutters justify-content-between text-center">
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="kbjz150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">买奇酷之咖宝家族</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="ddm150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">嘟当曼</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="yiyayiya3.jpg" alt="" style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">咿呀咿呀 第3季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="xla150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">小鹿问问·故事季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="gx150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">零捌学糖</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="caoyuan150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">草原豆思</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="bangbl150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">帮帮龙玩具总动员</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="frh150.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">松松小镇</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="yiyayiya9150.jpg" alt=""style="width: 150px;height: 200px;">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">咿呀咿呀 第9季</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="zhen150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">嘟嘟镇</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="kbjz150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">买奇酷之咖宝家族</a></p>
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-3">
+							<div class="img_re text-center">
+							<img src="kbjz150.jpg" alt="">
+							<p class="text-warning text-center img_ab bg_03">8.0分</p>
+							<p><a href="">买奇酷之咖宝家族</a></p>
+							</div>
+							</div>
+						
+				</div>
+				
+				<div class="bg-light text-center py-4 text-muted">
+					<div>
+						首页&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;动画排行&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#">返回顶部</a>
+					</div>
+					<p class="mt-2">Copyright © 酷米网 京ICP备09037622号-6</p>
+				</div>
+				
+		</div>
+		</div>
+		</div>
+	</body>
+</html>
